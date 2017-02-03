@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hyper Text Makeup Language Try</title>
+<!--Internal CSS-->
+<style>
+
+p.CSS    {color: deepskyblue;font-family:courier;border:1px dashed red;}
+p#special{font-family: Courier New, Courier, monospace}
+p {color:darkred}
+p.section {text-align:center}
+
+table, th, td{border: 1px solid black;border-collapse: collapse}
+th,td {text-align: center;}
+
+ul#menu {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color:pink;}
+li#menu{float: left}
+li#menu a{display:block; color:blueviolet;text-align: center; padding: 16px;text-decoration: none}
+li#menu a:hover{background-color:darkred}
+
+
+</style>
+
+<meta charset ="UTF-8">
+</head>
+<body>
+    <h1 id="top" style="text-align: center">
+        HTML_basic: All in one!
+    </h1>
+
+<!--Lists example-->
+<hr>
+<p class="section">
+    Lists
+    </p> 
+<ul id="menu">
+    <li id="menu"><a href="http://www.unimelb.edu.au" target="_blank">unimelb</a></li>
+    <li id="menu"><a href="http://www.uq.edu.au/" target="_blank">uniqueensland</a></li>
+    </ul>
+    <dl>
+        <dt>SWR</dt>
+        <dd>Bachelor of Civil Enginnering</dd>
+        <dt>LYC</dt>
+        <dd>Master of Electrical Enginnering</dd>
+        </dl>
+
+
+<!--computer code-->
+<hr>
+<p class="section">Computer Code example:</p>
+<pre>
+<code>var person = {
+    firstName:"John",
+    lastName:"Doe"
+}</code>
+<p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
+</pre>
+
+<!--CSS Simple -->
+<hr>
+<p class="section">CSS example</p>
+<p class="CSS">This is for CSS</p>
+<p id="special">I want to be a special paragraph!</p>
+
+<!--Links-->
+<hr>
+<p class="section">
+    Link example
+</p>
+<a href="http://www.unimelb.edu.au" target="_blank"><img src="h.png" alt="heihei">this is an image link</a>
+<a href="#top">Back to top</a>
+
+<!--Tables-->
+<hr>
+<p class="section">
+    Table example
+</p>
+<center><table style="width:400px;">
+    <caption>The couple</caption>
+    <tr style="background-color: pink;color: darkviolet;">
+        <th>Name</th>
+        <th>Gender</th>
+        <th>DOB</th>
+    </tr>
+    <tr>
+        <td>连悦成</td>
+        <td>Male</td>
+        <td>7/Oct/1990</td>
+    </tr>
+    <tr>
+        <td>施蔚蓉</td>
+        <td>Female</td>
+        <td>21/Jun/1991</td>
+    </tr>    
+</table></center>
+
+<!--iframe-->
+<hr>
+<p class="section">
+    iframe: display a web page inside a web page
+    </p>
+<center><iframe src="https://www.unimelb.edu.au" style="border:medium solid blue" width="100%" height=400px></iframe></center>
+
+<!--JavaScript-->
+<hr>
+<p class="section">
+    JavaScript makes wed page more dynamic
+    </p>
+<p style="text-align:center"><image id="unimelb" src="brand.png" align="middle">    </p>
+<script>
+function changeuni(u){
+    var pic
+    if(u == 0){
+        pic = "brand.png"
+    }else{
+        pic = "http://uq.edu.au/templates/web/images/fb-ogimage-uq.gif"
+    }
+    document.getElementById("unimelb").src = pic;
+}
+</script>
+<p style="text-align: center">
+     <button type = "button" onclick="changeuni(1)">UQL</button>
+     <button type = "button" onclick="changeuni(0)">unimelb</button>
+    </p>
+
+</body>
+</html>
