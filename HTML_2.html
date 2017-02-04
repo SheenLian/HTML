@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML.2
+        </title>
+        <style>
+        p.section {text-align:center; color:darkviolet}
+        </style>
+    </head>
+<body>
+    <!--Form-->
+    <hr />
+    <p class="section">Form
+        </p>
+<center><form action="Hello_web/html"> 
+    <fieldset>
+        <legend>Personal Information</legend>
+    firstname
+    <input type="text" name="firstname"/><br/>
+    lastname
+    <input type="text" name="lastname"/><br/>
+    <input type="radio" name="gender" value="male"/>Male
+    <input type="radio" name="gender" value="female"/>Female<br />
+    <input type="submit" value="Submit"/>
+    </fieldset>
+</form></center>
+</body>
+</html>
+
+<!--Form Element-->
+<hr />
+<p class="section">Form Element--
+    </p>
+    <p>Name:<form>
+        <select name="couple">
+            <option value="sheen">Sheen</option>
+            <option value="lily">Lily</option>
+        </select></form></p>
+<p>Message:</p>
+<form>
+<textarea name="note" rows="8" cols="66">
+</textarea>
+<input type="submit">
+</form>
+<!--input types-->
+<hr />
+<p class="section">Input Attributes
+</p>
+<p>
+    <ol>
+        <li><b>value:</b> specifies the initial value for an input field.</li><br />
+        <li><b>readonly:</b> specifies that the input field is read only.</li><br />
+        <li><b>disabled:</b> the input field is disabled.</li><br />
+        <li><b>size:</b> the size (how many characters) for the input field.</li><br />
+        <li><b>maxlength:</b> the maximum allowed length for the input filed.</li><br />
+    </ol><br />
+    HTML5 
+    <ol>
+        <li><b>autocomplete:</b> whether a form or input field should have autocomplete "on"" or "off".</li><br />
+        <li><b>novalidate:</b> this is a &ltform&gt attribute. When present, novalidate specifies that the form data should not be validated when submitted.</li><br />
+        <li><b>autofocus:</b> the input field should automatically get focus when the page loads.</li><br />
+        <li><b>form:</b> specifies one or more forms an &ltinput&gt element belongs to.</li><br />
+
+        <form action="action_page.php" id="form1">
+        First name: <input type="text" name="fname"><br>
+        <input type="submit" value="Submit">
+        </form>
+        Last name: <input type="text" name="lname" form="form1">
+        <li><b>formaction:</b> specifies the URL of a file that will process the input control when the form is submitted. 
+        Normally, &ltform&gt will contain action, but this formaction is located in a &ltinput&gt to send to another action file.</li>
+        <form action="action_page.php">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit"><br>
+        <input type="submit" formaction="demo_admin.asp"
+        value="Submit as admin">
+        </form><br />
+        <li><b>list:</b> refers to a &ltdatalist&gt element that contains pre-defined options for an &ltinput&gt element.</li>
+        <input list="browsers">
+         <datalist id="browsers">
+         <option value="Internet Explorer">
+         <option value="Firefox">
+         <option value="Chrome">
+         <option value="Opera">
+         <option value="Safari">
+         </datalist><br />
+        <li><b>pattern:</b> specifies a regular expression that the &ltinput&gt element's value is checked against.</li>
+         Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br />
+        <li><b>placeholder:</b> specifies a hint...</li><br />
+        <li><b>required:</b> specifies that an input field must be filled out before submitting.</li><br />    
+    </ol>
+</p>
+<hr/>
+<h1 style="text-align: center">My First Google Map</h1>
+<center><div id="map" style="width:600px;height:400px;"></div></center>
+<script>
+  function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-37.814, 144.96332),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<h1 style="text-align: center">Graduation</h1>
+<center><video width="400" height="250" autoplay loop>
+  <source src="001.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></center>
+
+
+</body>
+</htmal>
